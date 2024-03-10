@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "@fontsource/roboto-mono"; 
@@ -15,9 +16,9 @@ function Header() {
   return (
     <nav>
        <ul className={`pages ${isActive ? 'active' : ''}`}>
-        <li><a href="./">Início</a></li>
-        <li><a href="./">Sobre</a></li>
-        <li><a href="./">Contato</a></li>
+        <li><Link to="/">Início</Link></li>
+        <li><Link to="/about">Sobre</Link></li>
+        <li><Link to="/contact">Contato</Link></li>
       </ul>
       <FontAwesomeIcon icon={faBars} className='menu-open' onClick={handleMenuToggle} />
       <img src="./logo.png" alt="" srcSet="" />
