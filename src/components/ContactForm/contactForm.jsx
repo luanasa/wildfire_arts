@@ -16,9 +16,10 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="email">E-mail:</label>
+    <div className="form-container">
+      <form onSubmit={handleSubmit} className='form'>
+      <div className='form-group'>
+        <label htmlFor="email">Seu e-mail:</label>
         <input
           type="email"
           id="email"
@@ -27,8 +28,8 @@ function ContactForm() {
           required
         />
       </div>
-      <div>
-        <label htmlFor="message">Mensagem:</label>
+      <div className='form-group'>
+        <label htmlFor="message">Oii, como posso te ajudar?</label>
         <textarea
           id="message"
           value={message}
@@ -36,8 +37,10 @@ function ContactForm() {
           required
         />
       </div>
-      <button type="submit">Enviar</button>
-    </form>
+        <button className='form-submit-btn' type="submit">Enviar</button>
+      </form>
+    </div>
+    
   );
 }
 
