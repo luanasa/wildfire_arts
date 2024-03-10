@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 2rem;
+
+  text-align: center;
+  color: #5a5758;
+}
+
+.wrapper a {
+  color: #BB7295;
+}
+
+.wrapper a:hover {
+  opacity: 0.5;
+}

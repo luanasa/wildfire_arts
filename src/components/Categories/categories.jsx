@@ -30,6 +30,7 @@ function Categories() {
             textContent="Decor"
           />
         </div>
+        <hr className='line' />
     </div>
   );
 }

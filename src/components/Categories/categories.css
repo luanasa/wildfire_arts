@@ -7,6 +7,7 @@
 }
 
 .container {
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +15,7 @@
 }
 
 .container h1 {
-  font-weight: 100;
-  color: var(--brown);
+  text-align: center;
 }
 
 .container span {
@@ -23,12 +23,38 @@
 }
 
 .line {
-  width: 100%;
-  margin-top: 0.5rem;
-}
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
-.cardDiv {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+
+@media (min-width: 993px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container h1 {
+    font-weight: 100;
+    color: var(--brown);
+  }
+  
+  .container span {
+    color: var(--pink);
+  }
+  
+  .line {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 }

@@ -1,0 +1,139 @@
+:root {
+  --pink: #BB7295;
+  --black: #000000;
+  --gray: #f4f3f5;
+  --white: #FFFFFF;
+  --brown: #5a5758;
+}
+
+.footer_container {
+  background-color: #f1edef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: -5rem;
+}
+
+.footer_header h1{
+  font-weight: 100;
+  color: var(--brown);
+  font-size: 27px;
+  margin-bottom: 0.5rem;
+}
+
+.footer_header span {
+  color: var(--pink);
+}
+
+.footer_header p {
+  font-size: 15px;
+  color: var(--brown);
+}
+
+.footer_links {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+}
+
+.footer_links .pages_links {
+    background-image: url(../../../public/Colorido.png);
+    padding: 4rem;
+    width: 100%;
+    height: 18rem;
+    text-align: center;
+  }
+
+.title {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--pink);
+}
+
+.footer_links .pages_links li{
+    margin-top: 5px;
+    margin-bottom: 0.8rem;
+  }
+  
+.footer_links a {
+    color: #5a5758;
+    font-size: 20px;
+}
+
+.footer_links .other_links {
+    background-color:var(--white);
+    padding: 4rem;
+    width: 100%;
+    height: 18rem;
+    text-align: center;
+  }
+  
+.footer_container .line {
+    margin: 0;
+    width: 150%;
+  }
+
+@media (min-width: 993px) {
+  
+  .footer_links {
+    margin-top: 5rem;
+  
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+  }
+  
+  .footer_links ul:hover {
+    opacity: 0.7;
+  }
+  
+  .footer_links .pages_links {
+    background-image: url(../../../public/Colorido.png);
+    padding: 4rem;
+    width: 100%;
+    height: 20rem;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--pink);
+  }
+  
+  .footer_links .pages_links li{
+    margin-bottom: 5px;
+    
+  }
+  
+  .footer_links a:hover{
+    opacity: 0.5;
+  }
+  
+  .footer_links a {
+    color: #5a5758;
+    font-size: 18px;
+  }
+  
+  .footer_links .other_links {
+    background-color:var(--white);
+    padding: 4rem;
+    width: 100%;
+    height: 20rem;
+    text-align: left;
+  }
+  
+  .footer_container .line {
+    margin: 0;
+    width: 70%;
+  }
+}
