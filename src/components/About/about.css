@@ -6,16 +6,71 @@
   --brown: #483c42;
 }
 
-.about_container {
+@media (max-width: 992px) {
+  .about_container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 20rem;
-  gap: 7rem;
+  padding: 2rem;
+  gap: 3rem;
 }
 
 span {
   color: var(--pink);
+}
+
+.imgDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 200px;
+}
+
+.imgDiv span {
+  text-align: center;
+  font-size: 13px;
+}
+}
+
+span {
+  color: var(--pink);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0; 
+  transform: translateX(100%); /* Deslocamento para a direita */
+  animation: slideIn 1s forwards; /* Deslizamento */
+
+  text-align: center;
+  font-size: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Inicia fora da tela à direita */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Termina na posição inicial */
+  }
+}
+
+
+/* Estilos para dispositivos grandes (desktops e laptops) */
+@media (min-width: 993px) {
+  
+.about_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 20rem;
+  gap: 7rem;
 }
 
 .imgDiv {
@@ -36,22 +91,5 @@ span {
   width: max-content;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  opacity: 0; 
-  transform: translateX(100%); /* Deslocamento para a direita */
-  animation: slideIn 1s forwards; /* Deslizamento */
-}
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(100%); /* Inicia fora da tela à direita */
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0); /* Termina na posição inicial */
-  }
 }

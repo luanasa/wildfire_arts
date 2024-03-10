@@ -1,9 +1,21 @@
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './footer.css';
 import { Link } from 'react-router-dom';
 
 function Footer() {
+
+  const [footerRef, footerInView] = useInView({ threshold: 0.5 }); // Detecta se o footer está 50% visível na tela
+  const [animateFooter, setAnimateFooter] = useState(false);
+
+  useEffect(() => {
+    if (footerInView) {
+      setAnimateFooter(true); // Se o footer estiver visível, ativa a animação
+    }
+  }, [footerInView]);
+
   return (
-    <div className='footer_container'>
+    <div ref={footerRef} className={`footer_container ${animateFooter ? 'animate' : ''}`}>
       <div className="footer_header">
         <h1>Se torne um dos <span>Wildfire Lovers</span>🤍</h1>
         <p>Siga nossas redes sociais para receber descontos e novidades</p>

@@ -1,7 +1,6 @@
 .card {
   position: relative;
   cursor: pointer;
-  margin-top: 1.5rem;
   display: flex;
 }
 
@@ -9,6 +8,7 @@
   border-radius: 5px;
   width: 18rem;
   height: 18rem;
+  padding: 1rem;
 }
 
 .content {
