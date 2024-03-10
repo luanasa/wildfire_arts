@@ -1,26 +1,34 @@
 import React, { useState } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "@fontsource/roboto-mono"; 
+import MobileMenu from '../MobileMenu/mobilemenu';
 
 function Header() {
 
-  const [isActive, setIsActive] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuToggle = () => {
-    setIsActive(!isActive);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <nav>
-       <ul className={`pages ${isActive ? 'active' : ''}`}>
+       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+        {isMenuOpen && <MobileMenu />}
+      </div>
+      <div className="menu-open" onClick={toggleMenu}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" d="M0 0h24v24H0z"/>
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+        </svg>
+      </div>
+      
+      <ul className='pages'>
         <li><Link to="/">Início</Link></li>
         <li><Link to="/about">Sobre</Link></li>
         <li><Link to="/contact">Contato</Link></li>
       </ul>
-      <FontAwesomeIcon icon={faBars} className='menu-open' onClick={handleMenuToggle} />
       <img src="./logo.png" alt="" srcSet="" />
       <ul className="social-links">
         <li>
