@@ -4,8 +4,9 @@ import Header from './components/Header/header';
 import Categories from './components/Categories/categories';
 import Footer from './components/Footer/footer';
 import FooterCredits from './components/Footer_Credits/footer_credits';
-import "@fontsource/roboto-mono"; 
 import About from './components/About/about';
+import Contact from './components/Contact/contact';
+import "@fontsource/roboto-mono"; 
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Categories />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
         <FooterCredits />
