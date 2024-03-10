@@ -15,12 +15,18 @@ function Header() {
   return (
     <nav>
        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-        {isMenuOpen && <MobileMenu />}
+          {isMenuOpen && <MobileMenu />}
       </div>
       <div className="menu-open" onClick={toggleMenu}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-          <path fill="none" d="M0 0h24v24H0z"/>
-          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+          {isMenuOpen ? (
+          <>
+          <line x1="18" y1="6" x2="6" y2="18" stroke="black" strokeWidth="2" />
+          <line x1="6" y1="6" x2="18" y2="18" stroke="black" strokeWidth="2" />
+          </>
+          ) : (
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+          )}
         </svg>
       </div>
       
