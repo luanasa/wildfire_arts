@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.card img {
+  border-radius: 5px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1; 
+}
+.card img:hover {
+  opacity: 0.6; 
+}

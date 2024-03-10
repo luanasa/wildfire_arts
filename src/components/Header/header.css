@@ -1,0 +1,93 @@
+:root {
+  --pink: #BB7295;
+  --black: #000000;
+  --gray: #f4f3f5;
+  --white: #FFFFFF;
+  --brown: #483c42;
+}
+
+* {
+  font-family: "Roboto Mono";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .pages {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+nav .menu-open {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding: 20px; 
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -3rem;
+}
+
+/* Estilos para dispositivos grandes (desktops e laptops) */
+@media (min-width: 993px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+  }
+
+  nav .pages {
+  display: flex;
+  gap: 1rem;
+}
+
+  nav .pages a {
+    color: var(--brown);
+  } 
+  nav .pages a:hover {
+    color: var(--pink);
+    border-bottom: 1px dotted var(--pink) ;
+  }
+
+  nav .menu-open {
+    display: none;
+  }
+
+  nav img {
+    margin-right: 5rem;
+  }
+
+  nav .social-links {
+    margin: 0;
+  }
+  nav .social-links a:hover {
+    opacity: 0.2;
+    border-bottom: 1px solid var(--pink) ;
+  }
+}
