@@ -17,6 +17,9 @@
 .container h1 {
   animation: fadeIn 1s forwards;
   opacity: 0; 
+
+  text-align: center;
+  font-size: 22px;
 }
 
 @keyframes fadeIn {
@@ -26,11 +29,6 @@
   to {
     opacity: 1; 
   }
-}
-
-.container h1 {
-  text-align: center;
-  font-size: 22px;
 }
 
 .container span {
@@ -77,11 +75,18 @@
 
 
 .line {
-    width: 80%;
+  border: 1px solid var(--pink);
+    width: 75%;
     margin-top: 2rem;
-    margin-bottom: 1rem;
   }
 
+@media (max-width: 992px) {
+  .container h1{
+    width: 200px;
+}
+
+
+}
 
 @media (min-width: 993px) {
   .container {
@@ -101,7 +106,7 @@
   }
   
   .line {
-    width: 80%;
+    width: 75%;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
