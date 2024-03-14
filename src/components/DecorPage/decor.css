@@ -1,0 +1,22 @@
+.item-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 993px) {
+  .items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+}

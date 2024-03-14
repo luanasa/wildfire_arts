@@ -7,6 +7,7 @@ import FooterCredits from './components/Footer_Credits/footer_credits';
 import About from './components/About/about';
 import Contact from './components/Contact/contact';
 import "@fontsource/roboto-mono"; 
+import DecorPage from './components/DecorPage/decor';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Categories />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/decorPage" element={<DecorPage />} />
         </Routes>
         <Footer />
         <FooterCredits />

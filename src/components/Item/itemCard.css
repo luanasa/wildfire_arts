@@ -1,0 +1,21 @@
+.item-card {
+  text-align: center;
+}
+
+.item-card h2 {
+  font-size: 20px;
+}
+
+.item-card img {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.item-card img:hover {
+  opacity: 0.9;
+}
+
+.item-card span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+

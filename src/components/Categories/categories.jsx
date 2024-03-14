@@ -13,6 +13,7 @@ function Categories() {
             imageUrl="./flowers.jpg"
             imageAlt="Flores de crochê"
             textContent="Decor"
+            linkTo="/DecorPage"
           />
           <Card 
             imageUrl="./flowers.jpg"
