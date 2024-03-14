@@ -19,16 +19,19 @@ function Categories() {
             imageUrl="./flowers.jpg"
             imageAlt="Descrição da imagem"
             textContent="Decor"
+            linkTo="/DecorPage"
           />
           <Card 
             imageUrl="./flowers.jpg"
             imageAlt="Descrição da imagem"
             textContent="Decor"
+            linkTo="/DecorPage"
           />
           <Card 
             imageUrl="./flowers.jpg"
             imageAlt="Descrição da imagem"
             textContent="Decor"
+            linkTo="/DecorPage"
           />
         </div>
         <div className="line"></div>
