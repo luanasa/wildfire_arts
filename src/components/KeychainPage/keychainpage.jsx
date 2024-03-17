@@ -9,27 +9,40 @@ function KeychainPage() {
       <div className="items">
       <ItemCard
         imageUrl="./chaveiro.jpg" 
-        productName="Gatitos" 
+        productName="Urso sem curso" 
         price="20,00" 
       />
       <ItemCard
         imageUrl="./chaveiro2.jpg" 
-        productName="Hora do lanche" 
-        price="10,00" 
+        productName="My little friends" 
+        price="30,00" 
       />
       <ItemCard
         imageUrl="./chaveiro3.jpg" 
-        productName="Miauw" 
-        price="5,00" 
+        productName="Bunny" 
+        price="8,00" 
       />
       <ItemCard
         imageUrl="./chaveiro4.jpg" 
-        productName="Flores" 
-        price="2,00" 
+        productName="Tulipa azul" 
+        price="10,00" 
+      />
+      </div>
+      <div className="items">
+      <ItemCard
+        imageUrl="./chaveiro5.jpg" 
+        productName="Gatito" 
+        price="10,00" 
+      />
+      <ItemCard
+        imageUrl="./chaveiro6.jpg" 
+        productName="Tulipa branca pequena" 
+        price="7,00" 
       />
       </div>
       
     </div>
+    
   );
 }
 

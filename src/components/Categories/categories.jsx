@@ -16,7 +16,7 @@ function Categories() {
             linkTo="/decorPage"
           />
           <Card 
-            imageUrl="./chaveiro3.jpg"
+            imageUrl="./chaveiro.jpg"
             imageAlt="Descrição da imagem"
             textContent="Chaveiros"
             linkTo="/keychainPage"
