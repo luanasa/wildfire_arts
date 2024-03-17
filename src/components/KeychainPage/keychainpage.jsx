@@ -1,31 +1,31 @@
 import React from 'react';
-import "./keychainpage.css";
+import "../pages.css";
 import ItemCard from '../Item/itemCard';
 
 function KeychainPage() {
   return (
     <div className='item-page'>
-      <h1>Decor</h1>
+      <h1>Chaveiros 🐱</h1>
       <div className="items">
       <ItemCard
-        imageUrl="./flowers.jpg" 
-        productName="Buquê de flores em crochê" 
-        price="30" 
+        imageUrl="./chaveiro.jpg" 
+        productName="Gatitos" 
+        price="20,00" 
       />
       <ItemCard
-        imageUrl="./flowers.jpg" 
-        productName="Produto" 
-        price="Preço" 
+        imageUrl="./chaveiro2.jpg" 
+        productName="Hora do lanche" 
+        price="10,00" 
       />
       <ItemCard
-        imageUrl="./flowers.jpg" 
-        productName="Produto" 
-        price="Preço" 
+        imageUrl="./chaveiro3.jpg" 
+        productName="Miauw" 
+        price="5,00" 
       />
       <ItemCard
-        imageUrl="./flowers.jpg" 
-        productName="Produto" 
-        price="Preço" 
+        imageUrl="./chaveiro4.jpg" 
+        productName="Flores" 
+        price="2,00" 
       />
       </div>
       

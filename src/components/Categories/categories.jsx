@@ -22,7 +22,7 @@ function Categories() {
             linkTo="/keychainPage"
           />
           <Card 
-            imageUrl="./carteira3.jpg"
+            imageUrl="./bag3.jpg"
             imageAlt="Descrição da imagem"
             textContent="Carteiras/Bolsas"
             linkTo="/bagsPage"
