@@ -8,6 +8,9 @@ import About from './components/About/about';
 import Contact from './components/Contact/contact';
 import "@fontsource/roboto-mono"; 
 import DecorPage from './components/DecorPage/decor';
+import KeychainPage from './components/KeychainPage/keychainpage';
+import BagsPage from './components/BagsPage/bagspage';
+import ReadersPage from './components/ReadersPage/readerspage';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/decorPage" element={<DecorPage />} />
+          <Route path="/keychainPage" element={<KeychainPage />} />
+          <Route path="/bagsPage" element={<BagsPage />} />
+          <Route path="/readersPage" element={<ReadersPage />} />
         </Routes>
         <Footer />
         <FooterCredits />

@@ -13,25 +13,25 @@ function Categories() {
             imageUrl="./flowers.jpg"
             imageAlt="Flores de crochê"
             textContent="Decor"
-            linkTo="/DecorPage"
+            linkTo="/decorPage"
           />
           <Card 
-            imageUrl="./flowers.jpg"
+            imageUrl="./chaveiro3.jpg"
             imageAlt="Descrição da imagem"
-            textContent="Decor"
-            linkTo="/DecorPage"
+            textContent="Chaveiros"
+            linkTo="/keychainPage"
           />
           <Card 
-            imageUrl="./flowers.jpg"
+            imageUrl="./carteira3.jpg"
             imageAlt="Descrição da imagem"
-            textContent="Decor"
-            linkTo="/DecorPage"
+            textContent="Carteiras/Bolsas"
+            linkTo="/bagsPage"
           />
           <Card 
-            imageUrl="./flowers.jpg"
+            imageUrl="./cover2.jpg"
             imageAlt="Descrição da imagem"
-            textContent="Decor"
-            linkTo="/DecorPage"
+            textContent="Leitores"
+            linkTo="/readersPage"
           />
         </div>
         <div className="line"></div>
